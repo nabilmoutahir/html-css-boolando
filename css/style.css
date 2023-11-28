@@ -6,26 +6,12 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-body {
-    min-width: 1200px;
-}
-
 .debug {
     border: 2px dashed black;
 }
 
-
-header {
-    position: fixed;
-    left: 0;
-    right: 0;
-    height: 50px;
-    width: 100%;
-    background-color: orange;
-}
-
 header + * {
-    padding-top: 50px;
+    padding-top: 40px;
 }
 
 .container {
@@ -34,12 +20,17 @@ header + * {
 }
 
 /* HEADER------------------------------- */
-.header-left, .header-mid, .header-right{
-    display: inline-block;
+header {
+    position: fixed;
+    left: 0;
+    right: 0;
+    height: 40px;
+    width: 100%;
+    background-color: orange;
 }
 
 .header-container {
-    height: 50px;
+    height: 40px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -49,15 +40,22 @@ header + * {
 }
 
 .logo {
-    height: 25px;
+    height: 20px;
+}
+
+.icon {
+    font-size: small;
 }
 
 /* MAIN ---------------------------------------------------*/
+
 .main-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+    margin: auto;
+    max-width: 80%;
 }
 
 
@@ -66,6 +64,7 @@ header + * {
     margin-top: 30px;
     text-align: left;
     position: relative;
+    margin: 30px 0;
 }
 
 .card img {
@@ -97,6 +96,8 @@ header + * {
     position: absolute;
     bottom: 100px;
     text-align: center;
+    color: white;
+    font-weight: bold;
 }
 
 .discount, .type {
@@ -113,10 +114,16 @@ header + * {
    color: white;
 }
 
+
+
 /* FOOTER----------------------------------------- */
 footer {
     background-color: black;
     color: white;
+    
+}
+
+.footer-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -128,7 +135,6 @@ footer {
 .info {
     display: inline-block;
     font-size: small;
-    font-weight: bold;
 }
 
 .social {
