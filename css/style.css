@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 body {
@@ -32,12 +33,6 @@ header + * {
     max-width: 80%;
 }
 
-main {
-    background-color: blue;
-    height: 2000px;
-}
-
-
 /* HEADER------------------------------- */
 .header-left, .header-mid, .header-right{
     display: inline-block;
@@ -49,7 +44,6 @@ main {
     justify-content: space-between;
     align-items: center;
     color: white;
-    font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     font-size: small;
 }
@@ -68,13 +62,75 @@ main {
 
 
 .card {
-    background-color: red;
     width: calc(100% / 3 - 4px);
-    min-width: 300px;
     margin-top: 30px;
-    text-align: center;
+    text-align: left;
+    position: relative;
 }
 
 .card img {
     width: 100%;
+}
+
+.brand {
+    font-size: small;
+}
+
+.item {
+    font-weight: bold;
+}
+
+.price {
+    font-weight: bold;
+    color: red;
+    font-size: small;
+}
+
+.old-price {
+    font-weight: 400;
+    text-decoration: line-through;
+    color: black;
+    font-size: small;
+}
+
+.stats {
+    position: absolute;
+    bottom: 100px;
+    text-align: center;
+}
+
+.discount, .type {
+    padding: 4px 7px;
+    font-size: small;
+}
+
+.discount{
+    background-color: red;
+}
+
+.type {
+   background-color: green;
+   color: white;
+}
+
+/* FOOTER----------------------------------------- */
+footer {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+    font-weight: bold;
+    padding: 20px 0;
+}
+
+.info {
+    display: inline-block;
+    font-size: small;
+    font-weight: bold;
+}
+
+.social {
+    font-size: xx-small;
 }
