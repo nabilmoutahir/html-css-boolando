@@ -1,3 +1,4 @@
+/* GENERICS */
 * {
     margin: 0;
     padding: 0;
@@ -5,16 +6,41 @@
 }
 
 .debug {
-    border: 1px dashed black;
+    border: 2px dashed black;
 }
 
 
 header {
-    height: 100px;
     background-color: orange;
 }
 
 .container {
     margin: auto;
     max-width: 80%;
+}
+
+main {
+    background-color: blue;
+    height: 1000px;
+}
+
+
+/* HEADER------------------------------- */
+.header-left, .header-mid, .header-right{
+    display: inline-block;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: small;
+    padding: 10px 0;
+}
+
+.logo {
+    height: 25px;
 }
