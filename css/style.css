@@ -1,0 +1,20 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.debug {
+    border: 1px dashed black;
+}
+
+
+header {
+    height: 100px;
+    background-color: orange;
+}
+
+.container {
+    margin: auto;
+    max-width: 80%;
+}
