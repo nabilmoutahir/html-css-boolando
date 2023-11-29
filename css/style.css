@@ -27,6 +27,7 @@ header {
     height: 40px;
     width: 100%;
     background-color: orange;
+    z-index: 1;
 }
 
 .header-container {
@@ -140,3 +141,17 @@ footer {
 .social {
     font-size: xx-small;
 }
+
+
+/* HOOVER---------------------- */
+.img-hover{
+    display: none;
+}
+
+.card-image:hover .img-hover {
+    display: block;
+}
+
+.card-image:hover .img_front {
+    display: none;
+} 
